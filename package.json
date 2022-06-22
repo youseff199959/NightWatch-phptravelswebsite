@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "chromedriver": "^102.0.0",
+    "nightwatch": "^2.2.2"
+  },
+  "name": "nightwatch-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "mocha": "^9.2.2"
+  },
+  "scripts": {
+    "test": "nightwatch"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
