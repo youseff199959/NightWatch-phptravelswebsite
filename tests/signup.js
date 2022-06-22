@@ -12,8 +12,6 @@ module.exports={
     },
 
     "Check that the form has all the required elements" : function(browser){
-        
-
         browser.verify.title("Signup - PHPTRAVELS")
         browser.verify.elementPresent('[name="first_name"]')
         browser.verify.elementPresent('[name="last_name"]')
