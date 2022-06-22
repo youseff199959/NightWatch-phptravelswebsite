@@ -9,7 +9,7 @@ module.exports={
         myPageObject.waitForElementVisible(`@signUpButton`)
         myPageObject.click(`@signUpButton`)
         myPageObject.pause(1000)
-        myPageObject.verify.title("Signup - PHPTRAVELS")
+        myPageObject.verify.titleEquals("Signup - PHPTRAVELS")
     },
 
     "Check that the form has all the required elements" : function(browser){
@@ -20,7 +20,7 @@ module.exports={
 
     'Fill the form of the signup with valid data and verfiy that the signup is done without errors' : function (browser){
         const myPageObject = browser.page.model();
-        myPageObject.verify.title("Signup - PHPTRAVELS")
+        myPageObject.verify.titleEquals("Signup - PHPTRAVELS")
         myPageObject.submitPageForm("Yousef","Mahfouz","00201019147836","youseff"+ Math.floor(Math.random() * 5000) +"@gmail.com" , Math.random() * 10 , 2)
         myPageObject.pause(1000)
         myPageObject.checkSignup()
@@ -31,10 +31,10 @@ module.exports={
         myPageObject.navigate(browser.launchUrl).maximizeWindow()
         myPageObject.click(`@signUpButton`)
         myPageObject.pause(1000)
-        myPageObject.verify.title("Signup - PHPTRAVELS")
+        myPageObject.verify.titleEquals("Signup - PHPTRAVELS")
         data.forEach(({firstName,lastName,phone,email,password}) => {
         myPageObject.submitPageForm(firstName,lastName,phone,email,password,2)
-        myPageObject.verify.title("Signup - PHPTRAVELS")
+        myPageObject.verify.titleEquals("Signup - PHPTRAVELS")
         browser.refresh()
     });
     },
