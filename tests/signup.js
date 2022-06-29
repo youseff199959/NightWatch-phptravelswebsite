@@ -1,6 +1,7 @@
 const data = require('../data/data');
 
 
+
 module.exports={
 
     'Click the signup and wait the page to load' : function (browser){
