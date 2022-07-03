@@ -1,0 +1,30 @@
+module.exports=[
+    {
+        email:"sdkfjsdhfkjdshfks@sdjkds.com",
+        password:"sdlkvjsdlkfjdsfldsjdslf"
+    },
+    {
+        email:"sdkfjsdhfkjdshfks@",
+        password:"sdlkvjsdlkfjdsfldsjdslf"
+    },
+    {
+        email:"sdkfjsdhfkjdshfks@.com",
+        password:"sdlkvjsdlkfjdsfldsjdslf"
+    },
+    {
+        email:"sdkfjsdhfkjdshfks@..com",
+        password:"sdlkvjsdlkfjdsfldsjdslf"
+    },
+    {
+        email:"sdkfjsdhfkjdshfks",
+        password:"sdlkvjsdlkfjdsfldsjdslf"
+    },
+    {
+        email:"",
+        password:"sdlkvjsdlkfjdsfldsjdslf"
+    },
+    {
+        email:"sdkfjsdhfkjdshfks@sdjkds.com",
+        password:""
+    },
+]

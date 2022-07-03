@@ -24,7 +24,6 @@ const commands = [
                         .click(`ul#select2-account_type-results > li:nth-of-type(${customerTypeNumber})`)
                         .pause(1000)
                         .click(`@submitButton`)
-                        
         },
         checkSignup(){
             return this.verify.elementPresent('div[class="alert alert-success signup"]')

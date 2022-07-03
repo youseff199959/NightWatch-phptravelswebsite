@@ -6,7 +6,6 @@ module.exports=[
         phone: "00201019147836",
         email: "youseff"+ Math.floor(Math.random() * 5000) +"@gmail.com",
         password: "sadfsadasdasdadwqfwqfwfw",
-        expected:"Please, fill in the following fields:\nName"
     },
     {
         testCase : "Fill the form without providing the last name",
@@ -15,7 +14,6 @@ module.exports=[
         phone: "00201019147836",
         email: "youseff"+ Math.floor(Math.random() * 5000) +"@gmail.com",
         password: "sadfsadasdasdadwqfw",
-        expected:"Please, fill in the following fields:\nName"
     },
     {
         testCase : "Fill the form without providing the phone",
@@ -24,7 +22,6 @@ module.exports=[
         phone: "",
         email: "youseff"+ Math.floor(Math.random() * 5000) +"@gmail.com",
         password: "sadfsadasdasdadwqfw",
-        expected:"Please, fill in the following fields:\nName"
     },
     {
         testCase : "Fill the form without providing the email",
@@ -33,7 +30,6 @@ module.exports=[
         phone: "00201019147836",
         email: "",
         password: "sadfsadasdasdadwqfw",
-        expected:"Please, fill in the following fields:\nName"
     },
     {
         testCase : "Fill the form without providing the password",
@@ -42,6 +38,5 @@ module.exports=[
         phone: "00201019147836",
         email: "youseff"+ Math.floor(Math.random() * 5000) +"@gmail.com",
         password: "",
-        expected:"Please, fill in the following fields:\nName"
     },
 ]

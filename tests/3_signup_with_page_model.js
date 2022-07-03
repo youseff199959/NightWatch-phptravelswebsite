@@ -1,4 +1,5 @@
-const data = require('../data/data');
+const data = require('../data/invalidSignupData');
+const fileFunction = require('../data/fileFunctions');
 
 
 module.exports={
@@ -19,11 +20,15 @@ module.exports={
     },
 
     'Fill the form of the signup with valid data and verfiy that the signup is done without errors' : function (browser){
+        let email = "youseff"+ Math.floor(Math.random() * 5000) +"@gmail.com";
+        let password = Math.random() * 10 ;
         const myPageObject = browser.page.model();
         myPageObject.verify.titleEquals("Signup - PHPTRAVELS")
-        myPageObject.submitPageForm("Yousef","Mahfouz","00201019147836","youseff"+ Math.floor(Math.random() * 5000) +"@gmail.com" , Math.random() * 10 , 2)
+        myPageObject.submitPageForm("Yousef","Mahfouz","00201019147836",  email , password , 2)
         myPageObject.pause(1000)
-        myPageObject.checkSignup()
+        if(myPageObject.checkSignup()){
+            fileFunction.writeInFile(email+"\n"+password)
+        }
     },
 
     'Fill the form of the signup with invalid data and verfiy that the signup isn\'t completed and error is appeared' : function (browser){

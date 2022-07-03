@@ -1,4 +1,4 @@
-const data = require('../data/data');
+const signupData = require('../data/invalidSignupData');
 
 
 
@@ -48,7 +48,7 @@ module.exports={
         browser.click('a[class="theme-btn theme-btn-small waves-effect"]')
         browser.pause(1000)
         browser.verify.title("Signup - PHPTRAVELS")
-        data.forEach(({firstName,lastName,phone,email,password}) => {
+        signupData.forEach(({firstName,lastName,phone,email,password}) => {
         browser.setValue('[name="first_name"]' , firstName)
         browser.setValue('[name="last_name"]' , lastName)
         browser.setValue('[name="phone"]', phone)
